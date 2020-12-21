@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="description" content="Agencia de transporte terrestre Flota 'Vaca Diez' Linea Bandera del Beni">
+		<meta name="keywords" content="viajes, transporte, rutas del beni, buses, lugares turisticos">
+		<meta name="author" content="Milton Efrain">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>EMPRESA DE VIAJES X | Contactenos</title>
+		<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="img/logovaca.png">
+		<script src="https://kit.fontawesome.com/e1fd601679.js" crossorigin="anonymous"></script>
+		<script src="js/jquery.js"></script>
+</head>
+<body>
+	<header class="cabecera">
+			<div class="container">
+				<a href="index.html" class="link-logo">
+					<img class="logo" src="img/logovaca.png" width="138" height="140">
+
+				</a>
+				<nav class="menu">
+					<a href="index.html#conocenos">Conocenos</a>
+					<a href="index.html#locales">Oficinas</a>
+					<a href="nosotros.html">Nosotros</a>
+					<a href="reserva.html">Reservas de Pasajes</a>
+					<a href="registrocliente.html" target="_blank">Registrarse</a>
+					<a href="contacto.html" target="_self"class="seleccionado">Contactos</a>
+					<a href="intranet.html" target="_blank">Intranet</a>
+				</nav>
+				<a href="#" class="buses"><i class="fas fa-bus"></i></a>	
+			</div>
+	</header>
+	<main>
+		<section id="banner" class="banner-contacto">
+				<img class="banner-home" src="img/contacto.jpg" width="1880" height="1245">	
+			<div class="container">
+				<div class="fila fila-centrada">
+					<div class="columna columna-50 columna-mb-100">
+						<h1 class="centrar-texto">Contáctanos</h1>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="saltarina"><i class="fas fa-chevron-down"></i></a>
+		</section>
+		<section id="contacto" class="seccion">
+					<div class="container">
+						<div class="fila">
+							<div class=" columna columna-50 columna-mb-100 derecha-texto columna-info-contacto orden">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+								<h2>Av. Villa Fatima esquina exsurtidos, La Paz - Bolivia</h2>
+								<a href="tel:+59178657171" class="telefono">+59178657171</a>
+								<a href="mailto:miltonefrainyujrapalli@gmail.com" class="email">miltonefrainyujrapalli@gmail.com</a>
+							</div>
+							<div class=" columna columna-50 columna-mb-100">
+								<form onsubmit="return false" id="frmcontacto" action="registro.php" method="post">
+									<div class="form-bloques">
+										<input id="nombre"class="fomr-input" type="text" placeholder="Nombre" name="nombre" required>
+									</div>
+									<div class="form-bloques">
+										<input id="email"class="fomr-input" type="email" placeholder="Email" name="email" required>
+									</div>
+									<div class="form-bloques">
+										<input id="asunto" class="fomr-input" type="Asunto" placeholder="Asunto" name="Asunto" required>
+									</div>
+									<div class="form-bloques">
+										<textarea id="mensaje" class="fomr-input" required name="mensaje" placeholder="Mensaje"></textarea>
+									</div>
+									<div class="form-bloques form-bloque-boton">
+										<input type="submit" value="ENVIAR" class="btn boton-amarillo btn-enviar">
+									</div>
+								</form>
+							</div>						
+						</div>
+					</div>
+			</section>
+	</main>
+		<footer>
+			<div class="prefooter">
+				<div class="container">
+					<div class="fila">
+						<div class="columna columna-100">
+							<div class="mapa">
+								<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Flota%20Vaca%20Diez%2C%20La%20Paz&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pie">
+				<div class="container">
+					<div class="fila fila-extremo">
+						<div class="columna columna-33 empujar-33 empujar-mb-0 columna-mb-100 orden lista-redes">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="far fa-envelope"></i></a>
+						</div>
+						<div class="columna columna-33 columna-mb-100">
+							&reg; Derechos reservados 2020;
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/funciones.js"></script>
+</body>
+</html>

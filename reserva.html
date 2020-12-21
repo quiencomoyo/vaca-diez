@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Agencia de transporte terrestre Flota 'Vaca Diez' Linea Bandera del Beni">
+	<meta name="keywords" content="viajes, transporte, rutas del beni, buses, lugares turisticos">
+	<meta name="author" content="Milton Efrain">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EMPRESA DE VIAJES X | Nosotros</title>
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/logovaca.png">
+	<script src="https://kit.fontawesome.com/e1fd601679.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="cabecera">
+			<div class="container">
+				<a href="index.html" class="link-logo">
+					<img class="logo" src="img/logovaca.png" width="138" height="140">
+
+				</a>
+				<nav class="menu">
+					<a href="index.html#conocenos">Conocenos</a>
+					<a href="index.html#locales">Oficinas</a>
+					<a href="nosotros.html">Nosotros</a>
+					<a href="reserva.html" target="_self"class="seleccionado">Reservas de Pasajes</a>
+					<a href="registrocliente.html">Registrarse</a>
+					<a href="contacto.html" target="_self">Contactos</a>
+					<a href="intranet.html" target="_blank">Intranet</a>
+				</nav>
+				<a href="#" class="buses"><i class="fas fa-bus"></i></a>	
+			</div>
+	</header>
+	<main>	
+		<section id="banner" class="banner-contacto">
+				<img class="banner-home" src="img/computadora.jpg" width="1880" height="1245">	
+			<div class="container">
+				<div class="fila fila-centrada">
+					<div class="columna columna-50 columna-mb-100">
+						<h1 class="centrar-texto">RESERVAS</h1>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="saltarina"><i class="fas fa-chevron-down"></i></a>
+		</section>
+		<section id="reserva" class="seccion seccion_formulario">
+			<div class="container">
+						  <div class=" columna columna-41 columna-mb-100">
+								<form id="frmcontacto" action="registro.php" method="post">
+									
+									<div class="form-bloques form-bloques1">
+										<select name="origen" required>
+											<option value="">-- Seleccione su origen --</option>
+											<optgroup label="La Paz">
+												<option value="la_paz">La Paz</option>
+												<option value="yolosita">Yolosita</option>
+												<option value="caranavi">Caranavi</option>
+												<option value="Yucumo">Yucumo</option>
+											</optgroup>
+											<optgroup label="Beni">
+												<option value="trinidad">Trinidad</option>
+												<option value="rurrenabaque">Rurrenabaque</option>
+												<option value="reyes">Reyes</option>
+												<option value="santa_rosa">Santa Rosa</option>
+												<option value="riberalta">Riberalta</option>
+												<option value="guayaramerin">Guayaramerin</option>
+											</optgroup>
+											<optgroup label="Santa Cruz">
+												<option value="puerto_siles">Puerto Siles</option>
+											</optgroup>
+											<optgroup label="Pando">
+												<option value="cobija">Cobija</option>
+											</optgroup>
+										</select>
+									</div>
+									<div class="form-bloques form-bloques1">
+									 <select name="destino" required>
+										<option value="">-- Seleccione su destino --</option>
+										<optgroup label="La Paz">
+											<option value="la_paz">La Paz</option>
+											<option value="yolosita">Yolosita</option>
+											<option value="caranavi">Caranavi</option>
+											<option value="Yucumo">Yucumo</option>
+										</optgroup>
+										<optgroup label="Beni">
+											<option value="trinidad">Trinidad</option>
+											<option value="rurrenabaque">Rurrenabaque</option>
+											<option value="reyes">Reyes</option>
+											<option value="santa_rosa">Santa Rosa</option>
+											<option value="riberalta">Riberalta</option>
+											<option value="guayaramerin">Guayaramerin</option>
+										</optgroup>
+										<optgroup label="Santa Cruz">
+											<option value="puerto_siles">Puerto Siles</option>
+										</optgroup>
+										<optgroup label="Pando">
+											<option value="cobija">Cobija</option>
+										</optgroup>
+									 </select>
+									</div>
+									<div class="form-bloques form-bloques1">
+										<select name="tipo_buz" required>
+											<option value="">-- Seleccione su buz --</option>
+											<option value="buz_cama">Buz Cama</option>
+											<option value="buz_semicama">Buz SemiCama</option>
+										</select>
+									</div>
+									
+									<label class="radiocontainer">Persona Natural
+										<input type="radio" name="edad" value="persona_natural">
+										<span class="circle"></span>
+									</label>
+									<label class="radiocontainer">Tercera Edad
+										<input type="radio" name="edad" value="tercera_edad">
+										<span class="circle"></span>
+									</label>
+									</br>
+									</br>
+									<div class="form-bloques">
+										<input class="fomr-input" type="text" placeholder="Nombre y Apellido" name="nombres" required>
+									</div>
+									<div class="form-bloques">
+										<input class="fomr-input" type="text" placeholder="CI" name="CI" required>
+									</div>
+									<div class="form-bloques">
+										<input class="fomr-input" type="Asunto" placeholder="Direccion" name="direccion" required>
+									</div>
+						
+									<div class="form-bloques form-bloque-boton">
+										<input type="submit" value="RESERVAR" class="btn boton-amarillo">
+									</div>
+									<div class="form-bloques form-bloque-boton">
+										<input type="reset" name="limpiar" value="LIMPIAR" class="btn boton-amarillo">
+									</div>
+
+								</form>
+							</div>						
+						</div>
+					</div>
+		</section>
+	</main>
+	<footer>
+		<div class="pie">
+				<div class="container">
+					<div class="fila fila-extremo">
+						<div class="columna columna-33 empujar-33 empujar-mb-0 columna-mb-100 orden lista-redes">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="far fa-envelope"></i></a>
+						</div>
+						<div class="columna columna-33 columna-mb-100">
+							&reg; Derechos reservados 2020;
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+</body>
